@@ -1,8 +1,6 @@
 const { expect } = require('chai');
 
-function sum (...args) {
-    return args.reduce((a, b) => a + b);
-}
+const { sum } = require('../src/sum');
 
 describe('sum', () => {
     it('Should add 2..n numbers together', () => {
